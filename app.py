@@ -43,7 +43,7 @@ if uploaded_file is not None:
         if st.session_state.show_meaning:
             # 'meaning' 열의 데이터 출력
             st.info(f"뜻: {st.session_state.current_word['meaning']}")
-            st.balloons() # 축하 풍선 효과
+            st.success() # 축하 풍선 효과
             
 else:
     st.info("먼저 CSV 파일을 업로드해주세요. 엑셀의 첫 줄은 'word', 'meaning'이어야 합니다.")
